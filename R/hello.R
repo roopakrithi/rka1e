@@ -1,18 +1,9 @@
-# Hello, world!
-#
-# This is an example function named 'hello' 
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Cmd + Shift + B'
-#   Check Package:             'Cmd + Shift + E'
-#   Test Package:              'Cmd + Shift + T'
+library(devtools)
+library(roxygen2)
 
-hello <- function() {
-  print("Hello, world!")
-}
+setwd("~/Dropbox/Clark/2017-FALL/R/assignment1/rka1e")
+document()
+?hagfish_function
+
+setwd("~/Dropbox/Clark/2017-FALL/R/assignment1")
+install.packages("rka1e")
